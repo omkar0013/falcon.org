@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Icons  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel = "icon" href = "img0001.png" type = "image/x-icon">
 	<style>
@@ -8533,7 +8540,7 @@
     }
     @media (max-width:600px) {
       .hero-wrap .slider-text .desc h1 {
-        font-size: 22vw;
+        font-size: 93px;
         font-weight: 700;
         color: #fff;
         text-transform: uppercase;
@@ -8542,6 +8549,49 @@
     .hero-wrap {
       background: #211d2b;
     }
+    .hero-wrap .slider-text .desc h1 {
+      font-size: 253px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      
+      text-shadow: dimgray;
+      font-family: initial;
+    }
+    h1 {
+      font-size: 5rem;
+      background: linear-gradient(to right, rgb(255, 153, 113) 20%, #65C7F7 40%, #0052D4 60%, #bae03e 80%);
+      background-size: 200% auto;
+      color: #000;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: animate 2s linear infinite;
+  }
+
+  @keyframes animate {
+      to {
+          background-position: 200% center;
+      }
+  }
+  @media (max-width:600px) {
+    .hero-wrap .slider-text .desc h1 {
+      font-size: 93px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic;
+      
+      text-shadow: dimgray;
+      font-family: initial;
+    }
+    .hero-wrap .slider-text .desc h3 {
+      color: rgb(255, 255, 255);
+      font-size: 5px;
+    }
+  }
     </style>
     
     
@@ -8588,7 +8638,7 @@
 	        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
 	          <div class="col-md-12 ftco-animate text-center">
 	          	<div class="desc">
-                <h1 class="gradient-text">Falcon</h1>
+                <h1>Falcon</h1>
 		            <h3> An intelligent system for website performance monitoring and capturing key metrics with tag audits that help you understand how your website is performing.<br>
 
                   With smart tools like Songs ,Movies and QR Code Builder - why wait 30 days to audit and correct your implementation, when you can do it now? <br>
@@ -8617,19 +8667,15 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyDItqDbsF8rEVrh1l_0bbUNmp7tIyeYO1s",
-    authDomain: "falcononlinio.firebaseapp.com",
-    projectId: "falcononlinio",
-    storageBucket: "falcononlinio.appspot.com",
-    messagingSenderId: "340477595224",
-    appId: "1:340477595224:web:44d930cd1b18700f1d842d",
-    measurementId: "G-0CH2D069YB"
+    apiKey: "AIzaSyAJOmDgVM5708xHoyRzBbc9a8G8LnICvXM",
+    authDomain: "falcon-3e1cf.firebaseapp.com",
+    databaseURL: "https://falcon-3e1cf-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "falcon-3e1cf",
+    storageBucket: "falcon-3e1cf.appspot.com",
+    messagingSenderId: "871091564500",
+    appId: "1:871091564500:web:b584f9e63fdf15a3907041",
+    measurementId: "G-99MX24WDF5"
   };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
