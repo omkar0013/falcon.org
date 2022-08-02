@@ -147,6 +147,128 @@
             color: #e8e8e8 !important;
             background-color: #282c35 !important;
           }
+          .enterchat {
+            text-align: center;
+            background: rgb(24, 194, 35);
+            color: rgb(255, 38, 0);
+            font-size: xx-large;
+            border: none;
+            border-radius: 200px;
+            padding: 30px;
+            font-style: italic;
+            font-variant: character-variant;
+            font-family: initial;
+          }
+          .chating{
+            text-align: center;
+            margin-left: 125px;
+           margin: 100px;
+            display: flex;
+            
+          }
+          .enterchat:hover{
+            background:rgb(124, 207, 211);
+            animation: blinker 1.5s linear infinite;
+          }
+          @keyframes enterchat {
+            50% {
+                opacity: 3;
+            }
+          }
+          @media (max-width: 600px) {
+            .enterchat {
+              text-align: center;
+              background: rgb(116, 121, 116);
+              color: rgb(255, 38, 0);
+              
+              
+              padding: 30px;
+              font-style: italic;
+              font-variant: character-variant;
+              font-family: initial;
+            }.chating{
+              text-align: center;
+             
+              
+            }
+          }
+          .gradient-btn {
+            height: 4rem;
+            width: 12rem;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 40px;
+            border: none;
+            background: linear-gradient(45deg, #ef32d9, #89fffd);
+            color: white;
+            cursor: pointer;
+            position: relative;
+        }
+    
+        .gradient-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 40px;
+            background: linear-gradient(45deg, #ef32d9, #89fffd);
+            color: white;
+            z-index: -1;
+            filter: blur(0px);
+            transition: 0.5s ease;
+        }
+    
+        .gradient-btn:hover::after {
+            filter: blur(15px);
+        }
+        .gradient-btn {
+          text-align: center;
+          margin: 182px;
+            
+          margin-left: 415px;
+          padding: 21px;
+        }
+        @media (max-width: 600px) {
+          .gradient-btn {
+            height: 4rem;
+            width: 12rem;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 40px;
+            border: none;
+            background: linear-gradient(45deg, #34a9a7, #e73d3d);
+            color: white;
+            cursor: pointer;
+            position: relative;
+          }
+          .gradient-btn {
+            text-align: center;
+            margin: 85px;
+              margin-left: 85px;
+            margin-left: 74px;
+            padding: 21px;
+          }
+          .gradient-btn::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 40px;
+            background: linear-gradient(45deg, #ef32d9, #89fffd);
+            color: white;
+            z-index: -1;
+            filter: blur(0px);
+            transition: 0.5s ease;
+         }
+    
+        .gradient-btn:hover::after {
+            filter: blur(15px);
+         }
+        }
     </style>
   
       <!-- Smartsupp Live Chat script -->
@@ -263,9 +385,7 @@ window.smartsupp||(function(d) {
           <a href="#"><img src="img200.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
           <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
           <div class="w3-container">
-            <div class="enterchat" onclick="enterchat()">
-              <button type="submit">Enter</button>
-            </div>
+            <button class="gradient-btn" onclick="enterchat()"><strong>Enter To Chat</strong></button>
           </div>
         </header>
       </div>
