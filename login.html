@@ -42,7 +42,7 @@
         height: 100vh;
         font-size: 18px;
         display: flex;
-        background-color: rgb(200, 255, 245);
+        background-color:#211d2b;
 
     }
 
@@ -155,7 +155,7 @@
     }
 
     .form__link {
-        color: #162828;;
+        color: #f6f6f6;;
         text-decoration: none;
         cursor: pointer;
     }
@@ -209,7 +209,24 @@
             cursor: pointer;
         }
       }
-      
+      h1 {
+        font-size: 57px;
+        background: linear-gradient(to right, rgb(19, 149, 171) 20%, #851ACF 40%, #D40B98 60%, #f4f019 80%);
+        background-size: 200% auto;
+        color: #000;
+        background-clip: text;
+        text-transform: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate 2s linear infinite;
+        font-family:initial;
+    }
+  
+    @keyframes animate {
+        to {
+            background-position: 200% center;
+        }
+    }
     
 </style>
 
@@ -217,7 +234,7 @@
     
     <div class="container" id="cont">
         <form class="form" id="login" method="post">
-            <h1 class="gradient-text">WELCOME</h1>
+            <h1>WELCOME</h1>
             <div class="form__message form__message--error"></div>
             <div class="form__input-group">
                 <input type="text" name="username" class="form__input" id="username" autofocus placeholder="Username" required>
