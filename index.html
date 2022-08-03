@@ -8565,7 +8565,7 @@
       background-size: 200% auto;
       color: #000;
       background-clip: text;
-      text-fill-color: transparent;
+      text-transform: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: animate 2s linear infinite;
@@ -8592,7 +8592,44 @@
       font-size: 5px;
     }
   }
-    </style>
+  h3{
+    color:white;
+  }
+  .gradient-btn {
+    height: 4rem;
+    width: 12rem;
+    font-size: 19px;
+    color: #240101;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(45deg, #1bbba3, #ffd189);
+    cursor: pointer;
+    position: relative;
+    font-style: italic;
+    font-family: initial;
+  }
+
+.gradient-btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    background: linear-gradient(45deg, #e2ed46, #6c2eea);
+    color: white;
+    z-index: -1;
+    filter: blur(0px);
+    transition: 0.5s ease;
+}
+
+.gradient-btn:hover::after {
+    filter: blur(15px);
+}
+
+</style>
     
     
     
@@ -8639,11 +8676,15 @@
 	          <div class="col-md-12 ftco-animate text-center">
 	          	<div class="desc">
                 <h1>Falcon</h1>
-		            <h3 style="color:white"> An intelligent system for website performance monitoring and capturing key metrics with tag audits that help you understand how your website is performing.<br>
+		            <h3 style="color:white"> An intelligent system for website performance monitoring and capturing key metrics with tag audits that help you understand how your website is performing.
 
-                  With smart tools like Songs ,Movies and QR Code Builder - why wait 30 days to audit and correct your implementation, when you can do it now? <br>
+                  With smart tools like Songs ,Movies and QR Code Builder - why wait 30 days to audit and correct your implementation, when you can do it now? 
                   
                   The tool is Powered by Omkar, a leading digital analytics consulting company in India. </h3>
+
+                  <div class="w3-container">
+                    <button class="gradient-btn" onclick="loginclick()"><strong>Click To LogIn</strong></button>
+                  </div>
 	            </div>
 	          </div>
 	        </div>
@@ -8652,35 +8693,60 @@
 
     </div>
   </div>
-
+<script>
+  function loginclick(){
+    window.location = "login.html";
+  }
+</script>
 <script src="jquery.min.js"></script>
 <script src="popper.js"></script>
 <script src="bootstrap.min.js"></script>
 <script src="main.js"></script>
 <script type="module">
+
   // Import the functions you need from the SDKs you need
+
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-analytics.js";
+
   // TODO: Add SDKs for Firebase products that you want to use
+
   // https://firebase.google.com/docs/web/setup#available-libraries
 
+
   // Your web app's Firebase configuration
+
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
   const firebaseConfig = {
-    apiKey: "AIzaSyAJOmDgVM5708xHoyRzBbc9a8G8LnICvXM",
-    authDomain: "falcon-3e1cf.firebaseapp.com",
-    databaseURL: "https://falcon-3e1cf-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "falcon-3e1cf",
-    storageBucket: "falcon-3e1cf.appspot.com",
-    messagingSenderId: "871091564500",
-    appId: "1:871091564500:web:b584f9e63fdf15a3907041",
-    measurementId: "G-99MX24WDF5"
+
+    apiKey: "AIzaSyCXxppGkQfa0qMzeEeyLWhikatjRkxVkSQ",
+
+    authDomain: "falcononlineio.firebaseapp.com",
+
+    projectId: "falcononlineio",
+
+    storageBucket: "falcononlineio.appspot.com",
+
+    messagingSenderId: "252363384453",
+
+    appId: "1:252363384453:web:46d6f81bfc58674bdeabec",
+
+    measurementId: "G-34ZN58PDKM"
+
   };
 
+
   // Initialize Firebase
+
   const app = initializeApp(firebaseConfig);
+
   const analytics = getAnalytics(app);
+
 </script>
+
+  
 	</body>
 </html>
 
